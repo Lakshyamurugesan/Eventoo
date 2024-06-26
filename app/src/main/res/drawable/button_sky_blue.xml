@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rectangle with rounded corners -->
+    <corners android:radius="8dp" />
+
+    <!-- Solid blue color -->
+    <solid android:color="#3EB8FF" />
+
+    <!-- Button size -->
+    <size android:width="200dp" android:height="50dp" />
+</shape>

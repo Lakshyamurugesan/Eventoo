@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="#f2f2f2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+
+        <!-- CardView for the image -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageCardView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/postCardView"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <!-- Event Poster (Image) -->
+            <ImageView
+                android:id="@+id/eventPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/posternotavailable"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView to wrap all TextViews -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/postCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageCardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Event Headline -->
+                <TextView
+                    android:id="@+id/eventHeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Headline"
+                    android:textSize="24sp"
+                    android:padding="10dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <!-- Event Subject -->
+                <TextView
+                    android:id="@+id/eventSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Subject (About Event)"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <!-- Event Type -->
+                <TextView
+                    android:id="@+id/eventType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Type: Venue/Offline Mode"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/eventVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Type: Venue/Offline Mode"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Start Date -->
+                <TextView
+                    android:id="@+id/eventStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date: 5th November 2023"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- End Date -->
+                <TextView
+                    android:id="@+id/eventEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="End Date: 5th November 2023"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Location -->
+                <TextView
+                    android:id="@+id/eventLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Chennai, Tamil Nadu"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Last Date for Registration -->
+                <TextView
+                    android:id="@+id/lastRegistrationDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Date for Registration: 5th November 2023"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Registration Fees -->
+                <TextView
+                    android:id="@+id/registrationFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Fees: $50"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_sky_blue"
+            android:text="Register Now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postCardView"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

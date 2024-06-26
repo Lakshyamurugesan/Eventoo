@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="3dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/addphoto"
+                    android:adjustViewBounds="true"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:id="@+id/subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Enter Subject"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:scrollbars="vertical"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Enter Message"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:maxLines="10"
+                    android:minLines="4"
+                    android:scrollbars="vertical"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <!-- CardView for Link -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:id="@+id/link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Enter Link  "
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:lines="10"
+                    android:maxLines="10"
+                    android:minLines="4"
+                    android:scrollbars="vertical"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Enter Location  "
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:lines="10"
+                    android:maxLines="10"
+                    android:minLines="4"
+                    android:scrollbars="vertical"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:id="@+id/fees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Enter Registration Fee  "
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:lines="10"
+                    android:maxLines="10"
+                    android:minLines="4"
+                    android:scrollbars="vertical"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for Start Date -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="StartDate"
+                    android:textStyle="bold" />
+
+                <!-- You can add DatePicker or your preferred input method here for selecting start date -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for End Date -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="EndDate"
+                    android:textStyle="bold" />
+
+                <!-- You can add DatePicker or your preferred input method here for selecting end date -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView for End Date -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/regendDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Registration EndDate"
+                    android:textStyle="bold" />
+
+                <!-- You can add DatePicker or your preferred input method here for selecting end date -->
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:prompt="@string/choose_item" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Post"
+                android:background="@color/nav_item_color_selected"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
